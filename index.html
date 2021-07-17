@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folio Reader - RSS 阅读器</title>
+
+  <meta property="og:title" content="Folio Reader - RSS 阅读器" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta name="description" content="一款简洁现代的 RSS 阅读器。" />
+  <meta property="og:description" content="一款简洁现代的 RSS 阅读器。" />
+  <meta property="og:url" content="https://foliorssreader.github.io/" />
+  <meta property="og:site_name" content="Folio Reader - RSS 阅读器" />
+  <script
+    type="application/ld+json"> {"description":"一款简洁现代的 RSS 阅读器。","@type":"WebSite","url":"https://foliorssreader.github.io/","name":"Folio Reader - RSS 阅读器","headline":"Folio Reader - RSS 阅读器","@context":"https://schema.org"}</script>
+  <meta property="og:image" content="https://i.loli.net/2021/07/17/IPq8KM2kf17A3eb.png" />
+  <meta property="og:image:width" content="1090" />
+  <meta property="og:image:height" content="570" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    body {
+      background: linear-gradient(90deg, #DBE7FA 0%, #edf2fc 100%);
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        justify-content: center;
+      }
+    }
+
+    .logo {
+      width: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        margin-bottom: 0px;
+      }
+    }
+
+    .nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav a {
+      font-size: 16px;
+      line-height: 19px;
+      color: #8C8E9E;
+      padding: 0px 32px;
+      transition: 150ms;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #3DC0FA;
+    }
+
+    .summary {
+      padding: 60px 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 768px) {
+      .summary {
+        flex-direction: column;
+        padding: 15px 15px;
+        text-align: center;
+      }
+    }
+
+    .app-info h1 {
+      font-size: 60px;
+      color: #060C3A;
+      margin-bottom: 30px;
+    }
+
+    .app-info span {
+      font-size: 54px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .app-info h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .app-info span {
+        font-size: 40px;
+      }
+    }
+
+    .app-info p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #8C8E9E;
+      max-width: 379px;
+      line-height: 36px;
+      margin-bottom: 36px;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+    .download {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      color: #8C8E9E;
+    }
+
+    .google-play {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .apk {
+      padding: 19px 30px;
+      background: #000000;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 600;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .screenshot {
+      width: 500px;
+    }
+
+    .screenshot img {
+      display: block;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .screenshot {
+        width: 450px;
+        margin: 0 auto;
+        padding: 40px 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <img class="logo" src="img/logo.svg" alt="Logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">更新记录</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="summary">
+    <div class="app-info">
+      <h1>Folio Reader
+        <br /><span>- RSS 阅读器</span>
+      </h1>
+      <p>一款简洁现代的 RSS 阅读器。</p>
+
+      <div class="download">
+        <a href="#"><img class="google-play" src="img/google-play-badge.svg"></a>
+        或
+        <a class="apk" href="#">下载 APK</a>
+      </div>
+    </div>
+    <div class="screenshot">
+      <img src="img/screen.png" alt="Screenshot">
+    </div>
+  </div>
+</body>
+
+</html>
