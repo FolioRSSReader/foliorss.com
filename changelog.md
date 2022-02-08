@@ -1,4 +1,4 @@
-### Folio Reader 更新记录
+## Folio Reader 更新记录
 
 #### 0.0.2-alpha3 #6
 
