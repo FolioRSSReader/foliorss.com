@@ -37,7 +37,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
@@ -64,7 +64,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -103,10 +103,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -127,7 +127,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -140,7 +140,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -151,7 +151,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -167,7 +167,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -180,10 +180,10 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
@@ -611,6 +611,6 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>changelog</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h2 id='folio-reader-更新记录'><span>Folio Reader 更新记录</span></h2><h4 id='002-alpha5-8'><span>0.0.2-alpha5 #8</span></h4><p><span>2022-02-09</span></p><ol><li><span>fix: 首页底部 tab 适应暗黑主题改变</span></li></ol><h4 id='002-alpha4-7'><span>0.0.2-alpha4 #7</span></h4><p><span>2022-02-08</span></p><ol start='' ><li><span>调整底部指示器间距</span></li></ol><h4 id='002-alpha3-6'><span>0.0.2-alpha3 #6</span></h4><p><span>2022-02-08</span></p><ol start='' ><li><span>底部指示器增加动画效果</span></li></ol><h4 id='002-alpha2-5'><span>0.0.2-alpha2 #5</span></h4><p><span>2022-02-07</span></p><ol start='' ><li><span>提高稳定性</span></li><li><span>每个订阅源默认保存 1000 条文章</span></li><li><span>分页大小改为 50</span></li></ol><h4 id='002-alpha1-4'><span>0.0.2-alpha1 #4</span></h4><p><span>2022-01-10</span></p><ol start='' ><li><span>可对已有的订阅源进行</span><strong><span>修改、排序和删除</span></strong><span>操作</span></li><li><span>可</span><strong><span>通过 RSS URL 添加订阅源</span></strong></li><li><span>分页加载文章</span></li><li><span>每个订阅源默认保存 100 条文章，100 条前的文章自动清除</span></li></ol><h4 id='001-alpha1-2'><span>0.0.1-alpha1 #2</span></h4><p><span>2021-07-20</span></p><ol start='' ><li><span>删除测试用的订阅源</span></li></ol><h4 id='001-alpha-1'><span>0.0.1-alpha #1</span></h4><p><span>2021-07-20</span></p><ol start='' ><li><span>提供可选择的订阅源</span></li><li><span>阅读功能</span></li><li><span>暗黑模式</span></li><li><span>国际化：英文、简体中文、香港繁体、台湾繁体</span></li></ol></div></div>
+<div id='write'  class=''><h2 id='folio-reader-更新记录'><span>Folio Reader 更新记录</span></h2><h4 id='002-alpha5-8'><span>0.0.2-alpha5 #8</span></h4><p><span>2022-02-09</span></p><ol start='' ><li><span>fix: 首页底部 tab 适应暗黑主题改变</span></li></ol><h4 id='002-alpha4-7'><span>0.0.2-alpha4 #7</span></h4><p><span>2022-02-08</span></p><ol start='' ><li><span>调整底部指示器间距</span></li></ol><h4 id='002-alpha3-6'><span>0.0.2-alpha3 #6</span></h4><p><span>2022-02-08</span></p><ol start='' ><li><span>底部指示器增加动画效果</span></li></ol><h4 id='002-alpha2-5'><span>0.0.2-alpha2 #5</span></h4><p><span>2022-02-07</span></p><ol start='' ><li><span>提高稳定性</span></li><li><span>每个订阅源默认保存 1000 条文章</span></li><li><span>分页大小改为 50</span></li></ol><h4 id='002-alpha1-4'><span>0.0.2-alpha1 #4</span></h4><p><span>2022-01-10</span></p><ol start='' ><li><span>可对已有的订阅源进行</span><strong><span>修改、排序和删除</span></strong><span>操作</span></li><li><span>可</span><strong><span>通过 RSS URL 添加订阅源</span></strong></li><li><span>分页加载文章列表</span></li><li><span>每个订阅源默认保存 100 条文章，100 条前的文章自动清除</span></li></ol><h4 id='001-alpha1-2'><span>0.0.1-alpha1 #2</span></h4><p><span>2021-07-20</span></p><ol start='' ><li><span>删除测试用的订阅源</span></li></ol><h4 id='001-alpha-1'><span>0.0.1-alpha #1</span></h4><p><span>2021-07-20</span></p><ol start='' ><li><span>提供可选择的订阅源</span></li><li><span>阅读功能</span></li><li><span>暗黑模式</span></li><li><span>国际化：英文、简体中文、香港繁体、台湾繁体</span></li></ol></div></div>
 </body>
 </html>
